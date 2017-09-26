@@ -13,7 +13,7 @@
 1. [A3RT Proofreading API ](http://a3rt.recruit-tech.co.jp/product/proofreadingAPI/)  
 API KEY発行を押して、承認・自分のメールアドレスを打ち込み、メール認証をする。
 
-<img src="./doc/img/proofreading_00.png" width="400px">
+<img src="https://raw.githubusercontent.com/4geru/rdh-miss-api/master/doc/image/proofreading_00.png" width="400px">
 
 2. Twitter API
 
@@ -21,11 +21,11 @@ API KEY発行を押して、承認・自分のメールアドレスを打ち込�
 
 sigin inしてアプリを作成する。(携帯での電話認証が必要
 
-<img src="./doc/img/twitter_00.png" width="400px">
+<img src="https://raw.githubusercontent.com/4geru/rdh-miss-api/master/doc/image/twitter01.png" width="400px">
 
 入力するWebsiteはgithubでもいける。
 
-<img src="./doc/img/twitter_01.png" width="400px">
+<img src="https://raw.githubusercontent.com/4geru/rdh-miss-api/master/doc/image/twitter_00.png" width="400px">
 
 Key and Access Tokensにて、Consumer Key (API Key)/Consumer Secret (API Secret)/Access Token/Access Token Secret を作成する。
 
