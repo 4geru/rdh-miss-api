@@ -1,0 +1,72 @@
+GEM
+  remote: https://rubygems.org/
+  specs:
+    addressable (2.5.2)
+      public_suffix (>= 2.0.2, < 4.0)
+    buftok (0.2.0)
+    daemons (1.2.4)
+    domain_name (0.5.20170404)
+      unf (>= 0.0.5, < 1.0.0)
+    dotenv (2.2.1)
+    equalizer (0.0.11)
+    eventmachine (1.2.5)
+    faraday (0.11.0)
+      multipart-post (>= 1.2, < 3)
+    http (2.2.2)
+      addressable (~> 2.3)
+      http-cookie (~> 1.0)
+      http-form_data (~> 1.0.1)
+      http_parser.rb (~> 0.6.0)
+    http-cookie (1.0.3)
+      domain_name (~> 0.5)
+    http-form_data (1.0.3)
+    http_parser.rb (0.6.0)
+    memoizable (0.4.2)
+      thread_safe (~> 0.3, >= 0.3.1)
+    multipart-post (2.0.0)
+    mustermann (1.0.1)
+    naught (1.1.0)
+    public_suffix (3.0.0)
+    rack (2.0.3)
+    rack-protection (2.0.0)
+      rack
+    roauth (0.0.8)
+    simple_oauth (0.3.1)
+    sinatra (2.0.0)
+      mustermann (~> 1.0)
+      rack (~> 2.0)
+      rack-protection (= 2.0.0)
+      tilt (~> 2.0)
+    thread_safe (0.3.6)
+    tilt (2.0.8)
+    tweetstream (1.0.5)
+      daemons
+      twitter-stream
+    twitter (6.1.0)
+      addressable (~> 2.5)
+      buftok (~> 0.2.0)
+      equalizer (= 0.0.11)
+      faraday (~> 0.11.0)
+      http (~> 2.1)
+      http_parser.rb (~> 0.6.0)
+      memoizable (~> 0.4.2)
+      naught (~> 1.1)
+      simple_oauth (~> 0.3.1)
+    twitter-stream (0.1.12)
+      eventmachine (>= 0.12.8)
+      roauth (>= 0.0.2)
+    unf (0.1.4)
+      unf_ext
+    unf_ext (0.0.7.4)
+
+PLATFORMS
+  ruby
+
+DEPENDENCIES
+  dotenv
+  sinatra
+  tweetstream
+  twitter
+
+BUNDLED WITH
+   1.15.4
