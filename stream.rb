@@ -4,6 +4,8 @@ require 'open-uri'
 require 'dotenv'
 Dotenv.load ".env"
 
+require './request'
+
 client_rest = Twitter::REST::Client.new do |config|
   config.consumer_key        = ENV['CONSUMER_KEY']
   config.consumer_secret     = ENV['CONSUMER_SECRET']
@@ -28,16 +30,17 @@ topics = ["ruby", "python"]
 # @stream_client.filter(:follow => '909724056118730752,1084809481') do |status|
 # @stream_client.filter(:track => "#naruto") do |status|
 cnt = 0
+
 @stream_client.sample do |status|
   case status
   when Twitter::Tweet
     if status.lang == 'ja' and not status.text =~ /[RT|@|http|#]/
-      if cnt == 0
-        puts status.text
-        puts ">>#{status.user.name}  @#{status.user.screen_name}"
-        cnt = 10
-      end
-      cnt -= 1
+      # if cnt == 0
+        puts ">> #{status.user.name} @#{status.user.screen_name} \t#{status.text}"
+        puts " << #{proofreading(status.text)}" if status.text != proofreading(status.text)
+      #   cnt = 10
+      # end
+      # cnt -= 1
     end
   else
     # p status
